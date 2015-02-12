@@ -41,11 +41,17 @@ var (
 	verbose = flag.Bool("v", false, "verbose: informuje co robi")
 )
 
+const usageStr = `usage: resimg [flags] file ...
+	-d="/tmp/small"
+		katalog docelowy
+	-s="medium"
+		rozmiar obrazka (small, medium, large, lub w postaci '300x200')
+	-v=false
+		verbose: informuje co robi`
+
 func usage() {
-	fmt.Fprintf(os.Stderr, "Program resimg zmienia rozmiar obrazków.\n")
-	fmt.Fprintf(os.Stderr, "usage: resimg [flags] file ...\n")
-	flag.PrintDefaults()
-	os.Exit(2)
+	fmt.Fprintln(os.Stderr, usageStr)
+	os.Exit(1)
 }
 
 func mkdir(dir string) error {
