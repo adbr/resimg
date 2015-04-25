@@ -1,0 +1,11 @@
+{
+	"Tool": "github.com/kardianos/vendor",
+	"Package": [
+		{
+			"Vendor": "github.com/nfnt/resize",
+			"Local": "resimg/internal/github.com/nfnt/resize",
+			"Version": "ce86eacf2078a173b62f76c703abad3771d51678",
+			"VersionTime": "2015-03-27T19:50:42+01:00"
+		}
+	]
+}

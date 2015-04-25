@@ -1,2 +1,0 @@
-# resimg
-Zmienia rozmiar obrazków
