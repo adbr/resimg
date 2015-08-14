@@ -15,7 +15,7 @@ import (
 	"strconv"
 	"strings"
 
-	"resimg/internal/github.com/nfnt/resize"
+	"github.com/adbr/resimg/internal/github.com/nfnt/resize"
 )
 
 var (
